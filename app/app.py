@@ -90,7 +90,7 @@ x_test = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
 # Load model and predict on the data
 from keras.models import load_model
 
-model = load_model("./model")
+model = load_model("model/")
 
 # Get the models predicted price values
 predictions = model.predict(x_test)
